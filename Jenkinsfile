@@ -1,7 +1,10 @@
 pipeline {
 	agent any
 	stages {
-		stage ('build') {
-            sh 'echo ""checking'
+		stage ('Clone repository') {
+		    steps {
+            checkout scm
         }
+		}
     }
+}
