@@ -3,7 +3,12 @@ pipeline {
 	stages {
 		stage ('Clone repository') {
 		    steps {
-            checkout scm
+                         checkout scm
+        }
+		}
+		stage ('Build') {
+		    steps {
+            			sh 'docker build -t doc-image .'
         }
 		}
 		
