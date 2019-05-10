@@ -6,10 +6,6 @@ pipeline {
             checkout scm
         }
 		}
-		stage ('Build') {
-		    steps {
-            			sh 'docker build -t doc-image .'
-        }
-		}
+		
     }
 }
