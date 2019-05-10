@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage ('Build') {
 		    steps {
-            			sh 'docker build -t doc-image .'
+            			sh 'sudo docker build -t doc-image .'
         }
 		}
     }
