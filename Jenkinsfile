@@ -9,7 +9,7 @@ pipeline {
 		
 	stage ('build') {
 		    steps {
-                         sh 'docker build -t dock .'
+                         sh 'docker build -t dock /home/ec2-user'
         }
 		}	
     }
